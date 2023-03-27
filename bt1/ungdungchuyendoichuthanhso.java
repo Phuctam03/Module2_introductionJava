@@ -3,11 +3,11 @@ package bt1;
 import java.util.Scanner;
 
 public class ungdungchuyendoichuthanhso {
-
-    public void ChuyenDoiSoBaChuSo(int so) {
+    public void DocsoThanhChu(int so) {
         int tram;
         int chuc;
         int donvi;
+
         if (so <= 10) {
             switch (so) {
                 case 1:
@@ -174,14 +174,14 @@ public class ungdungchuyendoichuthanhso {
             }
             switch (chuc) {
                 case 0:
-                    if (donvi == 0) {
-                        System.out.println("Even");
-                    } else {
-                        System.out.println("Odd");
-                    }
+
                     break;
                 case 1:
-                    System.out.println("Ten");
+                    if (donvi == 1) {
+                        System.out.println("Eleven");
+                    } else if (donvi == 0) {
+                        System.out.println("Ten");
+                    }
                     break;
                 case 2:
                     System.out.println("Twenty");
@@ -211,48 +211,95 @@ public class ungdungchuyendoichuthanhso {
             }
             switch (donvi) {
                 case 1:
-                    System.out.println("One");
+                    if (chuc == 1) {
+                        break;
+                    } else {
+                        System.out.println("One");
+                    }
                     break;
                 case 2:
+                    if (chuc == 1) {
+                        System.out.println("Twelve");
+                        break;
+                    } else {
+                        System.out.println("Two");
+                    }
                     System.out.println("Two");
                     break;
                 case 3:
-                    System.out.println("Three");
+                    if (chuc == 1) {
+                        System.out.println("Thirdteen");
+                        break;
+                    } else {
+                        System.out.println("three");
+                    }
                     break;
                 case 4:
-                    System.out.println("Four");
+                    if (chuc == 1) {
+                        System.out.println("Fourteen");
+                        break;
+                    } else {
+                        System.out.println("Four");
+                    }
                     break;
                 case 5:
-                    System.out.println("Five");
+                    if (chuc == 1) {
+                        System.out.println("Fifteen");
+                        break;
+                    } else {
+                        System.out.println("Four");
+                    }
                     break;
                 case 6:
-                    System.out.println("Six");
+                    if (chuc == 1) {
+                        System.out.println("Sixty");
+                        break;
+                    } else {
+                        System.out.println("Six");
+                    }
                     break;
                 case 7:
-                    System.out.println("Seven");
+                    if (chuc == 1) {
+                        System.out.println("Seventeen");
+                        break;
+                    } else {
+                        System.out.println("Seven");
+                    }
                     break;
                 case 8:
-                    System.out.println("Eight");
+                    if (chuc == 1) {
+                        System.out.println("Eightteen");
+                        break;
+                    } else {
+                        System.out.println("Eight");
+                    }
                     break;
                 case 9:
-                    System.out.println("Nine");
+                    if (chuc == 1) {
+                        System.out.println("Nineteen");
+                        break;
+                    } else {
+                        System.out.println("Nine");
+                    }
                     break;
             }
 
         }
     }
 
-    public static void main(String[] args) {
-        ungdungchuyendoichuthanhso UD = new ungdungchuyendoichuthanhso();
-        Scanner sc = new Scanner(System.in);
-        int so;
-        do {
-            System.out.println("nhập vào một số (Dưới 999)");
-            so = Integer.parseInt(sc.nextLine());
-            UD.ChuyenDoiSoBaChuSo(so);
 
-        } while (so < 999);
+        public static void main (String[]args){
+            ungdungchuyendoichuthanhso UD = new ungdungchuyendoichuthanhso();
+            Scanner sc = new Scanner(System.in);
+            int so;
+            do {
+                System.out.println("nhập vào một số (Dưới 999)");
+                so = Integer.parseInt(sc.nextLine());
+                UD.DocsoThanhChu(so);
 
+            } while (so < 999);
+
+        }
     }
-    }
+
 
