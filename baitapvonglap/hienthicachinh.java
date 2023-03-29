@@ -30,6 +30,20 @@ public class hienthicachinh {
 
         }
     }
+    public void InHinhTamGiacCan(int h) {
+        for (int i = 1; i <= h; i++) {
+            for (int j = 1; j <= 2 * h - 1; j++) {
+                if (j >= h - i + 1 && j <= h + i - 1) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+
+    }
+
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -42,7 +56,8 @@ public class hienthicachinh {
                 System.out.println("1.in hình chữ nhật");
                 System.out.println("2.in tam giác vuông cân góc dưới trái");
                 System.out.println("3.in tam giác vuông cân góc phải trên");
-                System.out.println("4.thoát chương trình");
+                System.out.println("4.In hình tam giác cân");
+                System.out.println("5.thoát chương trình");
 
                 System.out.println("nhập lựa chọn");
                 LuaChon = Integer.parseInt(sc.nextLine());
@@ -65,6 +80,11 @@ public class hienthicachinh {
                         UD.InHinhTamGiacVuongCanGocTren(h);
                         break;
                     case 4:
+                        System.out.println("Nhập vào chiều cao :");
+                        h = Integer.parseInt(sc.nextLine());
+                        UD.InHinhTamGiacCan(h);
+                        break;
+                    case 5:
                         System.exit(0);
                 }
             } catch (Exception e) {
