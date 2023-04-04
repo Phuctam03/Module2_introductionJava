@@ -1,4 +1,4 @@
-package lopvadoituong;
+package lop_va_doituong;
 
 public class Fan {
     private final int slow = 1;

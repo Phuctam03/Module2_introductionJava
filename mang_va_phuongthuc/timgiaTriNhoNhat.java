@@ -1,4 +1,4 @@
-package mangvaphuongthuc;
+package mang_va_phuongthuc;
 
 import java.util.Scanner;
 

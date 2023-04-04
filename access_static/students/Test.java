@@ -1,4 +1,4 @@
-package accessstatic.students;
+package access_static.students;
 
 public class Test {
     public static void main(String[] args) {

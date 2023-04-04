@@ -1,4 +1,4 @@
-package lopvadoituong;
+package lop_va_doituong;
 
 import java.util.Scanner;
 

@@ -1,8 +1,8 @@
-package baitapvonglap;
+package bai_tap_vonglap;
 
 import java.util.Scanner;
 
-public class hienthicachinh {
+public class HienThiCacHinh {
     public void InHinhChuNhat(int h, int w) {
         for (int i = 0; i <= h; i++) {
             for (int j = 0; j <= w; j++) {
@@ -47,7 +47,7 @@ public class hienthicachinh {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        hienthicachinh UD = new hienthicachinh();
+        HienThiCacHinh UD = new HienThiCacHinh();
 
         while (true) {
             int LuaChon;

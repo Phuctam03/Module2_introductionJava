@@ -1,4 +1,4 @@
-package accessstatic.access;
+package access_static.access;
 
 public class Accessmodi {
     private double radius = 1.0;

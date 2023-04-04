@@ -1,9 +1,7 @@
-package baitapvonglap;
+package bai_tap_vonglap;
 
-import java.util.Scanner;
-
-public class hienthi20songuyento {
-    public boolean KiemTraSoNguyenTo(int n) {
+public class HienThiSoNguyenToNhoHon100 {
+    public boolean KiemTrasoNguyenTo(int n) {
         if (n < 2) {
             return false;
         } else {
@@ -17,12 +15,13 @@ public class hienthi20songuyento {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        hienthi20songuyento UD = new hienthi20songuyento();
-        for (int i = 0; i <= 20; i++) {
-            if (UD.KiemTraSoNguyenTo(i)) {
+        HienThiSoNguyenToNhoHon100 UD = new HienThiSoNguyenToNhoHon100();
+        for (int i = 2; i <= 100; i++) {
+            if (UD.KiemTrasoNguyenTo(i)) {
                 System.out.println(i + " ");
             }
+
         }
+
     }
 }

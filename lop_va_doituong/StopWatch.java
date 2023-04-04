@@ -1,16 +1,16 @@
-package lopvadoituong;
+package lop_va_doituong;
 
 import java.util.Date;
 
-public class Stopwatch {
+public class StopWatch {
     private Date startTime;
     private Date endTime;
 
-    public Stopwatch() {
+    public StopWatch() {
 
     }
 
-    public Stopwatch(Date startTime, Date endTime) {
+    public StopWatch(Date startTime, Date endTime) {
         this.startTime = startTime;
         this.endTime = endTime;
     }
@@ -63,7 +63,7 @@ public class Stopwatch {
     }
 
     public static void main(String[] args) {
-        Stopwatch watch = new Stopwatch();
+        StopWatch watch = new StopWatch();
         watch.start();
         double arr[] = watch.sortArray();
         for (int i = 0; i < arr.length; i++) {

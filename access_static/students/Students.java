@@ -1,4 +1,4 @@
-package accessstatic.students;
+package access_static.students;
 
 public class Students {
     private String name = "John";
